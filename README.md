@@ -1,37 +1,31 @@
-# Rails Boilerplate for Online Apps
+# Rails Boilerplate for Static Websites
 
-This Rails boilerplate provides a solid foundation for building online applications with essential features such as user authentication, authorization, and a clean front-end design using Tailwind CSS.
+This Rails boilerplate offers a streamlined foundation for crafting static websites with simplicity and efficiency. It comes equipped with essential components and tools, including a responsive design built with Tailwind CSS and enhanced front-end interactions using jQuery.
 
 ## Features
 
-- **User Authentication**: Devise is integrated to handle user registration, sign-in, sign-out, and password reset functionalities.
+- **Basic Navbar and Footer**: Get started quickly with a pre-configured basic navbar and footer, saving you time on front-end setup.
 
-- **Authorization**: Pundit is implemented for managing user permissions and access control.
+- **Responsive Design**: Utilize the power of Tailwind CSS to create modern, responsive user interfaces effortlessly.
 
-- **Front-end Styling**: Tailwind CSS is set up as the default styling framework to create modern and responsive user interfaces.
+- **Rails Framework**: Built on Rails, this boilerplate harnesses the reliability and versatility of the Rails framework.
 
-- **jQuery**: jQuery is included to simplify front-end interactions and enhance user experience.
-
-- **Database**: PostgreSQL is used as the default database, but you can easily switch to another database of your choice.
-
-- **Rails 7**: This boilerplate is built on Rails 7, harnessing the latest features and improvements.
-
-- **Ready to go Set up**: With simple, minimalistic sign-in / sign-up pages and a navbar with some generic buttons and a working dropdown, you don't need to lose time creating a working place on the front-end side. You can start working as soon as you clone this repo and worry about the front-end design later.
+- **Ready-to-Go Settings**: Enjoy a hassle-free development experience with pre-configured settings, allowing you to dive right into your project.
 
 ## Getting Started
 
-Follow these steps to get started with this boilerplate:
+Follow these steps to begin using this boilerplate:
 
 1. Clone the repository to your local machine:
 ```bash
-gh repo clone UmutAkturk14/rails-template-pundit-tailwind project-name
+gh repo clone UmutAkturk14/rails-template-static-website-tailwind project-name
 cd project-name
 ```
 2. Install the required gems: 
 ```bash
 bundle install
 ```
-3. Run database migrations:
+3. **Optional:** If you need a database, generate necessary migrations as your needs and run database migrations:
 ```bash
 rails db:migrate
 ```
@@ -41,9 +35,14 @@ dev
 ```
 5. Access the application in your web browser at http://localhost:3000.
 
+- Customize to Suit Your Needs: Add your content, pages, and styling to create a unique static website.
+- Start Developing: With the basic structure in place, you can start building your static website immediately.
+- Deploy: When you're ready, deploy your website to your preferred hosting service.
+
 ## Usage
-- Customize the application by adding your own controllers, models, and views.
 
-- Update the policies to define and enforce authorization rules as needed for your application.
+- Build additional pages and features tailored to your project's requirements.
+- Modify the styling and design to match your branding and preferences.
+- Extend the website's functionality as needed, all while benefiting from the boilerplate's initial setup.
 
-- Extend the application's functionality according to your project requirements.
+Enjoy a streamlined development experience with this Rails-based static website boilerplate. Build your website faster and more efficiently, thanks to the included basic components and responsive design powered by Tailwind CSS and jQuery.
