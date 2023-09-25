@@ -1,24 +1,18 @@
-<% if notice %>
-  <div class="fixed bottom-0 right-0 w-full flex justify-end rounded-lg opacity-60 z-50">
-    <div class="relative px-3 py-3 mb-4 border rounded-xl bg-teal-200 border-teal-300 text-teal-800  opacity-0 opacity-100 block m-1 w-1/2 flash" role="alert">
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      <%= notice %>
-  </div>
-  </div>
-<% end %>
-<% if alert %>
-  <div class="fixed bottom-0 right-0 w-full flex justify-end rounded-lg opacity-60 z-50">
-    <div class="relative px-3 py-3 mb-4 border rounded-xl bg-teal-200 border-teal-300 text-teal-800  opacity-0 opacity-100 block m-1 w-1/2 flash" role="alert">
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      <%= alert %>
-  </div>
-  </div>
+<% flash_types = { notice: 'teal', alert: 'red' } %>
+<% flash_types.each do |type, bg_color| %>
+  <% if flash[type] %>
+    <div class="fixed bottom-0 right-0 w-full flex justify-end rounded-lg opacity-60 z-50">
+      <div class="relative px-3 py-3 mb-4 border rounded-xl bg-<%= bg_color %>-200 border-<%= bg_color %>-300 text-<%= bg_color %>-800 opacity-0 opacity-100 block m-1 w-1/2 flash" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <%= flash[type] %>
+      </div>
+    </div>
+  <% end %>
 <% end %>
 
 <script>
 $(document).ready(function () {
   // Hide the .flash element after 2 seconds
-
   setTimeout(function() {
     $(".flash").fadeOut(1000, function() {
       if ($(this).is(":hidden")) {
@@ -29,5 +23,4 @@ $(document).ready(function () {
     });
   }, 3000);
 });
-
 </script>
