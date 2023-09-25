@@ -83,10 +83,10 @@ end
 gem "tailwindcss-rails", "~> 2.0"
 
 # Devise
-gem "devise"
+# gem "devise"
 
 # Pundit
-gem "pundit"
+# gem "pundit"
 
 # Simple form for
 gem "simple_form", github: "heartcombo/simple_form"
@@ -113,7 +113,7 @@ gem "simple_form", github: "heartcombo/simple_form"
 # gem "geocoder"
 
 # Friendly ID
-gem 'friendly_id', '~> 5.4.0'
+# gem 'friendly_id', '~> 5.4.0'
 
 # Inline SVG
 gem 'inline_svg'
